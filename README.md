@@ -1,7 +1,7 @@
 # Demand-Forecasting-For-Walmart
 The project involves prediction of accurate sales for 45 stores of Walmart, one of the US-based leading retail stores, considering the impact of promotional markdown events. Checking if macroeconomic factors like CPI, unemployment rate, etc. have an impact on weekly sales 
 # Details of data :-
-This project consist of three data files -> Features,Stores and Train which are in total of more than 400k rows of data.
+This project consist of three data files => Features,Stores and Train which are in total of more than 400k rows of data.
 # Features :-
 'Store'(number of stores), 'Date', 'Temperature', 'Fuel_Price', 'MarkDown'(five columns),'CPI'(consumer price index), 'Unemployment' and a  'IsHoliday'(boolean containing whether the week has holidays or not).
 # Stores :-
@@ -9,7 +9,7 @@ This project consist of three data files -> Features,Stores and Train which are 
 # Train :-
 'Store'(number of stores), 'Dept'(departments),'Date', 'Weekly_Sales', 'IsHoliday'(boolean containing whether the week has holidays or not).
 # Algorithms applied on the data :-
-As the goal of this project was to forecast the sales of the walmart , therefore there were three algorithms applied on the data -> Linear Regression , Decision Tree Regressor, Random Forest Regressor .
+As the goal of this project was to forecast the sales of the walmart , therefore there were three algorithms applied on the data => Linear Regression , Decision Tree Regressor, Random Forest Regressor .
 # Linear Regression :-
  linear regression is a linear approach to modeling the relationship between a scalar response (or dependent variable) and one or more explanatory variables (or independent variables). The case of one explanatory variable is called simple linear regression. In linear regression, the relationships are modeled using linear predictor functions whose unknown model parameters are estimated from the data. Such models are called linear models.[3] Most commonly, the conditional mean of the response given the values of the explanatory variables (or predictors) is assumed to be an affine function of those values; less commonly, the conditional median or some other quantile is used.Since our goal was to estimate weekly sales based on features provided to us, Linear Regression sounded like a good fit. Linear regression models the relationship between a scalar variable and a set of independent variables. Using the merged dataset which matched all stores to their specific features, and the yielded predictive model would tell us which features were most important to predicting weekly sales. The predictive model showed that the most important feature in determining weekly sales was the ‘IsHoliday’ feature. This means that the weeks that contained a holiday were the most successful when it came to weekly sales, while the least important feature was temperature. The dates that were taken into account contained important days such as the Super Bowl, Labor Day, Thanksgiving (most likely including Black Friday and Cyber Monday), and Christmas.
 # Decision Tree Regressor :-
